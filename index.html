@@ -1,0 +1,864 @@
+// FILE: index.html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TeamSync - Find Your Perfect Hackathon Team</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Sora:wght@600;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- NAVBAR -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <span class="logo-icon">⚡</span>
+                <span class="logo-text">TeamSync</span>
+            </div>
+            
+            <ul class="nav-links" id="navLinks">
+                <li><a href="#home" class="nav-link" data-route="home">Home</a></li>
+                <li><a href="#feed" class="nav-link" data-route="feed">Feed</a></li>
+                <li><a href="#hackathons" class="nav-link" data-route="hackathons">Hackathons</a></li>
+                <li><a href="#teammates" class="nav-link" data-route="teammates">Teammates</a></li>
+                <li><a href="#profile" class="nav-link" data-route="profile">Profile</a></li>
+                <li><a href="#about" class="nav-link" data-route="about">About</a></li>
+            </ul>
+
+            <button class="mobile-toggle" id="mobileToggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- MAIN CONTENT CONTAINER -->
+    <main id="mainContent" class="main-content">
+        
+        <!-- HOME PAGE -->
+        <div id="page-home" class="page">
+            <!-- Hero Section -->
+            <section class="hero">
+                <div class="hero-background">
+                    <div class="hero-grid"></div>
+                </div>
+                <div class="hero-content">
+                    <h1 class="hero-title">
+                        Find Your Perfect<br>
+                        <span class="gradient-text">Hackathon Team</span>
+                    </h1>
+                    <p class="hero-subtitle">
+                        Connect with talented developers, designers, and innovators.<br>
+                        Build winning projects together.
+                    </p>
+                    <div class="hero-cta">
+                        <a href="#hackathons" class="btn btn-primary">Explore Hackathons</a>
+                        <a href="#teammates" class="btn btn-secondary">Find Teammates</a>
+                    </div>
+                    <div class="hero-stats">
+                        <div class="stat-item">
+                            <span class="stat-number">2,500+</span>
+                            <span class="stat-label">Active Users</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-number">150+</span>
+                            <span class="stat-label">Hackathons</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-number">800+</span>
+                            <span class="stat-label">Teams Formed</span>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Features Section -->
+            <section class="features">
+                <div class="container">
+                    <h2 class="section-title">Why TeamSync?</h2>
+                    <div class="features-grid">
+                        <div class="feature-card">
+                            <div class="feature-icon">🎯</div>
+                            <h3>Smart Matching</h3>
+                            <p>AI-powered algorithm matches you with teammates based on skills, interests, and availability.</p>
+                        </div>
+                        <div class="feature-card">
+                            <div class="feature-icon">🚀</div>
+                            <h3>Live Hackathons</h3>
+                            <p>Browse active and upcoming hackathons. Filter by tech stack, mode, and difficulty level.</p>
+                        </div>
+                        <div class="feature-card">
+                            <div class="feature-icon">⚡</div>
+                            <h3>Build Teams Faster</h3>
+                            <p>Post your requirements, connect instantly, and start building within minutes.</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- How It Works -->
+            <section class="how-it-works">
+                <div class="container">
+                    <h2 class="section-title">How It Works</h2>
+                    <div class="steps-container">
+                        <div class="step">
+                            <div class="step-number">01</div>
+                            <h3>Create Your Profile</h3>
+                            <p>Showcase your skills, experience, and interests</p>
+                        </div>
+                        <div class="step-connector"></div>
+                        <div class="step">
+                            <div class="step-number">02</div>
+                            <h3>Find or Post</h3>
+                            <p>Browse teams looking for members or post your requirements</p>
+                        </div>
+                        <div class="step-connector"></div>
+                        <div class="step">
+                            <div class="step-number">03</div>
+                            <h3>Connect & Build</h3>
+                            <p>Connect with teammates and start building amazing projects</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Live Activity Preview -->
+            <section class="live-activity">
+                <div class="container">
+                    <h2 class="section-title">Live Activity</h2>
+                    <div class="activity-feed">
+                        <div class="activity-item">
+                            <span class="activity-avatar">👨‍💻</span>
+                            <span class="activity-text"><strong>Alex Kumar</strong> joined <strong>ETHGlobal Hackathon</strong></span>
+                            <span class="activity-time">2m ago</span>
+                        </div>
+                        <div class="activity-item">
+                            <span class="activity-avatar">👩‍🎨</span>
+                            <span class="activity-text"><strong>Sarah Chen</strong> is looking for a <strong>UI/UX Designer</strong></span>
+                            <span class="activity-time">5m ago</span>
+                        </div>
+                        <div class="activity-item">
+                            <span class="activity-avatar">🧑‍💼</span>
+                            <span class="activity-text"><strong>Team Alpha</strong> formed for <strong>AI Hackathon 2024</strong></span>
+                            <span class="activity-time">12m ago</span>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Final CTA -->
+            <section class="final-cta">
+                <div class="container">
+                    <div class="cta-box">
+                        <h2>Ready to Find Your Dream Team?</h2>
+                        <p>Join thousands of builders creating amazing projects together</p>
+                        <a href="#feed" class="btn btn-primary btn-large">Get Started Now</a>
+                    </div>
+                </div>
+            </section>
+        </div>
+
+        <!-- FEED PAGE -->
+        <div id="page-feed" class="page">
+            <div class="feed-layout">
+                <!-- Left Sidebar -->
+                <aside class="feed-sidebar-left">
+                    <div class="sidebar-card">
+                        <h3>Quick Actions</h3>
+                        <ul class="quick-actions">
+                            <li><a href="#hackathons">🏆 Browse Hackathons</a></li>
+                            <li><a href="#teammates">👥 Find Teammates</a></li>
+                            <li><a href="#profile">👤 Edit Profile</a></li>
+                        </ul>
+                    </div>
+                    <div class="sidebar-card">
+                        <h3>Navigation</h3>
+                        <ul class="side-nav">
+                            <li class="active">📰 Feed</li>
+                            <li>🔥 Trending</li>
+                            <li>⭐ Saved</li>
+                            <li>💬 Messages</li>
+                        </ul>
+                    </div>
+                </aside>
+
+                <!-- Main Feed -->
+                <div class="feed-main">
+                    <!-- Post Creation Box -->
+                    <div class="post-create-card">
+                        <h3>Create a Post</h3>
+                        <textarea id="postContent" placeholder="Looking for a frontend dev for AI hackathon..."></textarea>
+                        <div class="post-options">
+                            <select id="postType" class="post-select">
+                                <option>Looking for team</option>
+                                <option>Need members</option>
+                                <option>General</option>
+                            </select>
+                            <input type="text" id="postTags" class="post-input" placeholder="Add tags (e.g., React, AI, Web3)">
+                        </div>
+                        <button class="btn btn-primary" id="createPostBtn">Post</button>
+                    </div>
+
+                    <!-- Posts Feed -->
+                    <div id="postsContainer" class="posts-container">
+                        <!-- Posts will be dynamically inserted here -->
+                    </div>
+                </div>
+
+                <!-- Right Sidebar -->
+                <aside class="feed-sidebar-right">
+                    <div class="sidebar-card">
+                        <h3>🔥 Trending Hackathons</h3>
+                        <div class="trending-list">
+                            <div class="trending-item">
+                                <div class="trending-info">
+                                    <strong>ETHGlobal 2024</strong>
+                                    <span class="trending-meta">250 participants</span>
+                                </div>
+                            </div>
+                            <div class="trending-item">
+                                <div class="trending-info">
+                                    <strong>AI/ML Challenge</strong>
+                                    <span class="trending-meta">180 participants</span>
+                                </div>
+                            </div>
+                            <div class="trending-item">
+                                <div class="trending-info">
+                                    <strong>Web3 Builders</strong>
+                                    <span class="trending-meta">120 participants</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="sidebar-card">
+                        <h3>✨ Active Users</h3>
+                        <div class="active-users">
+                            <div class="user-item">
+                                <span class="user-avatar">👨‍💻</span>
+                                <div class="user-info">
+                                    <strong>Alex Kumar</strong>
+                                    <span class="user-status">Online</span>
+                                </div>
+                            </div>
+                            <div class="user-item">
+                                <span class="user-avatar">👩‍🎨</span>
+                                <div class="user-info">
+                                    <strong>Sarah Chen</strong>
+                                    <span class="user-status">Online</span>
+                                </div>
+                            </div>
+                            <div class="user-item">
+                                <span class="user-avatar">🧑‍💼</span>
+                                <div class="user-info">
+                                    <strong>Mike Johnson</strong>
+                                    <span class="user-status">Online</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </aside>
+            </div>
+        </div>
+
+        <!-- HACKATHONS PAGE -->
+        <div id="page-hackathons" class="page">
+            <div class="container">
+                <div class="page-header">
+                    <h1 class="page-title">Discover Hackathons</h1>
+                    <p class="page-subtitle">Find and join exciting hackathons worldwide</p>
+                </div>
+
+                <!-- Search and Filters -->
+                <div class="search-bar-container">
+                    <input type="text" class="search-input" placeholder="Search hackathons...">
+                    <button class="btn btn-primary">Search</button>
+                </div>
+
+                <div class="filter-chips">
+                    <button class="chip active">All</button>
+                    <button class="chip">AI/ML</button>
+                    <button class="chip">Web3</button>
+                    <button class="chip">Blockchain</button>
+                    <button class="chip">DevTools</button>
+                    <button class="chip">Gaming</button>
+                    <button class="chip">Online</button>
+                    <button class="chip">Offline</button>
+                </div>
+
+                <!-- View Toggle -->
+                <div class="view-toggle">
+                    <button class="toggle-btn active" data-view="grid">Grid</button>
+                    <button class="toggle-btn" data-view="compact">Compact</button>
+                </div>
+
+                <!-- Hackathons Grid -->
+                <div class="hackathons-grid" id="hackathonsGrid">
+                    <!-- Hackathon Card 1 -->
+                    <div class="hackathon-card">
+                        <div class="hackathon-header">
+                            <h3>ETHGlobal 2024</h3>
+                            <span class="badge badge-online">Online</span>
+                        </div>
+                        <div class="hackathon-organizer">by ETHGlobal Team</div>
+                        <div class="hackathon-date">📅 Mar 15-17, 2024</div>
+                        <div class="hackathon-tags">
+                            <span class="tag">Web3</span>
+                            <span class="tag">Blockchain</span>
+                            <span class="tag">Ethereum</span>
+                        </div>
+                        <button class="btn btn-secondary btn-full">View Details</button>
+                    </div>
+
+                    <!-- Hackathon Card 2 -->
+                    <div class="hackathon-card">
+                        <div class="hackathon-header">
+                            <h3>AI/ML Challenge 2024</h3>
+                            <span class="badge badge-hybrid">Hybrid</span>
+                        </div>
+                        <div class="hackathon-organizer">by Google Developers</div>
+                        <div class="hackathon-date">📅 Mar 20-22, 2024</div>
+                        <div class="hackathon-tags">
+                            <span class="tag">AI</span>
+                            <span class="tag">Machine Learning</span>
+                            <span class="tag">Python</span>
+                        </div>
+                        <button class="btn btn-secondary btn-full">View Details</button>
+                    </div>
+
+                    <!-- Hackathon Card 3 -->
+                    <div class="hackathon-card">
+                        <div class="hackathon-header">
+                            <h3>DevTools Innovation</h3>
+                            <span class="badge badge-offline">Offline</span>
+                        </div>
+                        <div class="hackathon-organizer">by Microsoft</div>
+                        <div class="hackathon-date">📅 Apr 5-7, 2024</div>
+                        <div class="hackathon-tags">
+                            <span class="tag">DevTools</span>
+                            <span class="tag">VS Code</span>
+                            <span class="tag">TypeScript</span>
+                        </div>
+                        <button class="btn btn-secondary btn-full">View Details</button>
+                    </div>
+
+                    <!-- Hackathon Card 4 -->
+                    <div class="hackathon-card">
+                        <div class="hackathon-header">
+                            <h3>GameDev Jam 2024</h3>
+                            <span class="badge badge-online">Online</span>
+                        </div>
+                        <div class="hackathon-organizer">by Unity</div>
+                        <div class="hackathon-date">📅 Apr 12-14, 2024</div>
+                        <div class="hackathon-tags">
+                            <span class="tag">Gaming</span>
+                            <span class="tag">Unity</span>
+                            <span class="tag">C#</span>
+                        </div>
+                        <button class="btn btn-secondary btn-full">View Details</button>
+                    </div>
+
+                    <!-- Hackathon Card 5 -->
+                    <div class="hackathon-card">
+                        <div class="hackathon-header">
+                            <h3>Climate Tech Hack</h3>
+                            <span class="badge badge-hybrid">Hybrid</span>
+                        </div>
+                        <div class="hackathon-organizer">by Climate Action</div>
+                        <div class="hackathon-date">📅 Apr 18-20, 2024</div>
+                        <div class="hackathon-tags">
+                            <span class="tag">Climate</span>
+                            <span class="tag">IoT</span>
+                            <span class="tag">Data Science</span>
+                        </div>
+                        <button class="btn btn-secondary btn-full">View Details</button>
+                    </div>
+
+                    <!-- Hackathon Card 6 -->
+                    <div class="hackathon-card">
+                        <div class="hackathon-header">
+                            <h3>FinTech Revolution</h3>
+                            <span class="badge badge-online">Online</span>
+                        </div>
+                        <div class="hackathon-organizer">by PayPal</div>
+                        <div class="hackathon-date">📅 May 3-5, 2024</div>
+                        <div class="hackathon-tags">
+                            <span class="tag">FinTech</span>
+                            <span class="tag">Blockchain</span>
+                            <span class="tag">APIs</span>
+                        </div>
+                        <button class="btn btn-secondary btn-full">View Details</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- TEAMMATES PAGE -->
+        <div id="page-teammates" class="page">
+            <div class="teammates-layout">
+                <!-- Filters Sidebar -->
+                <aside class="filters-sidebar">
+                    <div class="filters-card">
+                        <h3>Filters</h3>
+                        
+                        <div class="filter-group">
+                            <label>Skills</label>
+                            <div class="filter-options">
+                                <label class="checkbox-label">
+                                    <input type="checkbox"> Frontend
+                                </label>
+                                <label class="checkbox-label">
+                                    <input type="checkbox"> Backend
+                                </label>
+                                <label class="checkbox-label">
+                                    <input type="checkbox"> UI/UX
+                                </label>
+                                <label class="checkbox-label">
+                                    <input type="checkbox"> AI/ML
+                                </label>
+                                <label class="checkbox-label">
+                                    <input type="checkbox"> Blockchain
+                                </label>
+                            </div>
+                        </div>
+
+                        <div class="filter-group">
+                            <label>Role</label>
+                            <div class="filter-options">
+                                <label class="checkbox-label">
+                                    <input type="checkbox"> Developer
+                                </label>
+                                <label class="checkbox-label">
+                                    <input type="checkbox"> Designer
+                                </label>
+                                <label class="checkbox-label">
+                                    <input type="checkbox"> Product Manager
+                                </label>
+                            </div>
+                        </div>
+
+                        <div class="filter-group">
+                            <label>Experience</label>
+                            <div class="filter-options">
+                                <label class="checkbox-label">
+                                    <input type="checkbox"> Beginner
+                                </label>
+                                <label class="checkbox-label">
+                                    <input type="checkbox"> Intermediate
+                                </label>
+                                <label class="checkbox-label">
+                                    <input type="checkbox"> Advanced
+                                </label>
+                            </div>
+                        </div>
+
+                        <button class="btn btn-secondary btn-full">Apply Filters</button>
+                    </div>
+                </aside>
+
+                <!-- Main Content -->
+                <div class="teammates-main">
+                    <div class="page-header">
+                        <h1 class="page-title">Find Teammates</h1>
+                        <p class="page-subtitle">Connect with talented individuals</p>
+                    </div>
+
+                    <!-- User Cards Grid -->
+                    <div class="user-cards-grid">
+                        <!-- User Card 1 -->
+                        <div class="user-card">
+                            <div class="user-card-header">
+                                <div class="user-card-avatar">👨‍💻</div>
+                                <div class="user-card-info">
+                                    <h3>Alex Kumar</h3>
+                                    <p class="user-college">MIT • Computer Science</p>
+                                </div>
+                            </div>
+                            <div class="user-card-skills">
+                                <span class="tag">React</span>
+                                <span class="tag">Node.js</span>
+                                <span class="tag">TypeScript</span>
+                                <span class="tag">AWS</span>
+                            </div>
+                            <p class="user-card-bio">Full-stack developer passionate about building scalable web applications. 3+ years of experience.</p>
+                            <div class="user-card-status">
+                                <span class="status-badge status-looking">Looking for team</span>
+                            </div>
+                            <div class="user-card-actions">
+                                <button class="btn btn-primary btn-small">Connect</button>
+                                <button class="btn btn-secondary btn-small">Invite</button>
+                            </div>
+                        </div>
+
+                        <!-- User Card 2 -->
+                        <div class="user-card">
+                            <div class="user-card-header">
+                                <div class="user-card-avatar">👩‍🎨</div>
+                                <div class="user-card-info">
+                                    <h3>Sarah Chen</h3>
+                                    <p class="user-college">Stanford • Design</p>
+                                </div>
+                            </div>
+                            <div class="user-card-skills">
+                                <span class="tag">UI/UX</span>
+                                <span class="tag">Figma</span>
+                                <span class="tag">Prototyping</span>
+                            </div>
+                            <p class="user-card-bio">Product designer focused on creating intuitive user experiences. Love working on innovative projects.</p>
+                            <div class="user-card-status">
+                                <span class="status-badge status-members">Looking for members</span>
+                            </div>
+                            <div class="user-card-actions">
+                                <button class="btn btn-primary btn-small">Connect</button>
+                                <button class="btn btn-secondary btn-small">Invite</button>
+                            </div>
+                        </div>
+
+                        <!-- User Card 3 -->
+                        <div class="user-card">
+                            <div class="user-card-header">
+                                <div class="user-card-avatar">🧑‍💼</div>
+                                <div class="user-card-info">
+                                    <h3>Mike Johnson</h3>
+                                    <p class="user-college">Berkeley • MBA</p>
+                                </div>
+                            </div>
+                            <div class="user-card-skills">
+                                <span class="tag">Product</span>
+                                <span class="tag">Strategy</span>
+                                <span class="tag">Marketing</span>
+                            </div>
+                            <p class="user-card-bio">Product manager with startup experience. Great at validating ideas and go-to-market strategies.</p>
+                            <div class="user-card-status">
+                                <span class="status-badge status-looking">Looking for team</span>
+                            </div>
+                            <div class="user-card-actions">
+                                <button class="btn btn-primary btn-small">Connect</button>
+                                <button class="btn btn-secondary btn-small">Invite</button>
+                            </div>
+                        </div>
+
+                        <!-- User Card 4 -->
+                        <div class="user-card">
+                            <div class="user-card-header">
+                                <div class="user-card-avatar">👨‍🔬</div>
+                                <div class="user-card-info">
+                                    <h3>Raj Patel</h3>
+                                    <p class="user-college">CMU • AI/ML</p>
+                                </div>
+                            </div>
+                            <div class="user-card-skills">
+                                <span class="tag">Python</span>
+                                <span class="tag">TensorFlow</span>
+                                <span class="tag">PyTorch</span>
+                                <span class="tag">Data Science</span>
+                            </div>
+                            <p class="user-card-bio">ML engineer specializing in computer vision and NLP. Published researcher with 2 papers.</p>
+                            <div class="user-card-status">
+                                <span class="status-badge status-members">Looking for members</span>
+                            </div>
+                            <div class="user-card-actions">
+                                <button class="btn btn-primary btn-small">Connect</button>
+                                <button class="btn btn-secondary btn-small">Invite</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Team Posts Section -->
+                    <div class="section-divider">
+                        <h2>Recent Team Posts</h2>
+                    </div>
+
+                    <div class="team-posts">
+                        <div class="post-card">
+                            <div class="post-header">
+                                <div class="post-avatar">👥</div>
+                                <div class="post-info">
+                                    <h4>Team Alpha</h4>
+                                    <span class="post-time">2 hours ago</span>
+                                </div>
+                            </div>
+                            <p class="post-content">Looking for a backend developer proficient in Go and PostgreSQL for an AI-powered productivity app. ETHGlobal hackathon.</p>
+                            <div class="post-tags">
+                                <span class="tag">Backend</span>
+                                <span class="tag">Go</span>
+                                <span class="tag">PostgreSQL</span>
+                            </div>
+                            <div class="post-actions">
+                                <button class="btn btn-primary btn-small">Interested</button>
+                                <button class="btn btn-secondary btn-small">Learn More</button>
+                            </div>
+                        </div>
+
+                        <div class="post-card">
+                            <div class="post-header">
+                                <div class="post-avatar">🚀</div>
+                                <div class="post-info">
+                                    <h4>Innovation Squad</h4>
+                                    <span class="post-time">5 hours ago</span>
+                                </div>
+                            </div>
+                            <p class="post-content">Need a UI/UX designer for a climate tech project. Experience with data visualization is a plus!</p>
+                            <div class="post-tags">
+                                <span class="tag">UI/UX</span>
+                                <span class="tag">Design</span>
+                                <span class="tag">Climate Tech</span>
+                            </div>
+                            <div class="post-actions">
+                                <button class="btn btn-primary btn-small">Interested</button>
+                                <button class="btn btn-secondary btn-small">Learn More</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- PROFILE PAGE -->
+        <div id="page-profile" class="page">
+            <div class="container">
+                <!-- Profile Header -->
+                <div class="profile-header-card">
+                    <div class="profile-banner"></div>
+                    <div class="profile-info-section">
+                        <div class="profile-avatar-large">👨‍💻</div>
+                        <div class="profile-details">
+                            <h1>Alex Kumar</h1>
+                            <p class="profile-college">Massachusetts Institute of Technology</p>
+                            <div class="profile-skills">
+                                <span class="tag">React</span>
+                                <span class="tag">Node.js</span>
+                                <span class="tag">TypeScript</span>
+                                <span class="tag">AWS</span>
+                                <span class="tag">Docker</span>
+                            </div>
+                        </div>
+                        <button class="btn btn-secondary">Edit Profile</button>
+                    </div>
+                </div>
+
+                <!-- Stats Row -->
+                <div class="stats-row">
+                    <div class="stat-card">
+                        <div class="stat-value">12</div>
+                        <div class="stat-label">Hackathons Joined</div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-value">8</div>
+                        <div class="stat-label">Teams Built</div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-value">24</div>
+                        <div class="stat-label">Posts</div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-value">156</div>
+                        <div class="stat-label">Connections</div>
+                    </div>
+                </div>
+
+                <!-- Tabs -->
+                <div class="profile-tabs">
+                    <button class="tab-btn active" data-tab="posts">My Posts</button>
+                    <button class="tab-btn" data-tab="participation">Participation</button>
+                </div>
+
+                <!-- Tab Content: My Posts -->
+                <div id="tab-posts" class="tab-content active">
+                    <div class="posts-container">
+                        <div class="post-card">
+                            <div class="post-header">
+                                <div class="post-avatar">👨‍💻</div>
+                                <div class="post-info">
+                                    <h4>Alex Kumar</h4>
+                                    <span class="post-time">1 day ago</span>
+                                </div>
+                            </div>
+                            <p class="post-content">Looking for a team for ETHGlobal 2024! I'm a full-stack developer with experience in React and Solidity. Let's build something amazing!</p>
+                            <div class="post-tags">
+                                <span class="tag">Web3</span>
+                                <span class="tag">React</span>
+                                <span class="tag">Solidity</span>
+                            </div>
+                            <div class="post-stats">
+                                <span>❤️ 24 likes</span>
+                                <span>💬 8 comments</span>
+                            </div>
+                        </div>
+
+                        <div class="post-card">
+                            <div class="post-header">
+                                <div class="post-avatar">👨‍💻</div>
+                                <div class="post-info">
+                                    <h4>Alex Kumar</h4>
+                                    <span class="post-time">3 days ago</span>
+                                </div>
+                            </div>
+                            <p class="post-content">Just finished the AI/ML Challenge! Amazing experience working with talented folks. Special thanks to my team!</p>
+                            <div class="post-tags">
+                                <span class="tag">AI</span>
+                                <span class="tag">Reflection</span>
+                            </div>
+                            <div class="post-stats">
+                                <span>❤️ 45 likes</span>
+                                <span>💬 12 comments</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Tab Content: Participation -->
+                <div id="tab-participation" class="tab-content">
+                    <div class="participation-grid">
+                        <div class="participation-card">
+                            <h3>ETHGlobal 2024</h3>
+                            <p>Built a decentralized identity verification system using Ethereum and zero-knowledge proofs.</p>
+                            <div class="participation-tags">
+                                <span class="tag">Web3</span>
+                                <span class="tag">Ethereum</span>
+                                <span class="tag">ZK</span>
+                            </div>
+                            <div class="participation-date">Mar 15-17, 2024</div>
+                            <div class="participation-achievement">🏆 2nd Place Winner</div>
+                        </div>
+
+                        <div class="participation-card">
+                            <h3>AI/ML Challenge 2023</h3>
+                            <p>Created an ML model for real-time object detection in autonomous vehicles using PyTorch.</p>
+                            <div class="participation-tags">
+                                <span class="tag">AI</span>
+                                <span class="tag">PyTorch</span>
+                                <span class="tag">Computer Vision</span>
+                            </div>
+                            <div class="participation-date">Dec 10-12, 2023</div>
+                            <div class="participation-achievement">✨ Participant</div>
+                        </div>
+
+                        <div class="participation-card">
+                            <h3>DevTools Innovation</h3>
+                            <p>Developed a VS Code extension for AI-powered code reviews and suggestions.</p>
+                            <div class="participation-tags">
+                                <span class="tag">DevTools</span>
+                                <span class="tag">TypeScript</span>
+                                <span class="tag">VS Code</span>
+                            </div>
+                            <div class="participation-date">Nov 5-7, 2023</div>
+                            <div class="participation-achievement">🥉 3rd Place Winner</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- ABOUT PAGE -->
+        <div id="page-about" class="page">
+            <div class="container about-container">
+                <div class="page-header">
+                    <h1 class="page-title">About TeamSync</h1>
+                    <p class="page-subtitle">Connecting builders, one hackathon at a time</p>
+                </div>
+
+                <div class="about-section">
+                    <div class="about-card">
+                        <div class="about-icon">🎯</div>
+                        <h2>The Problem</h2>
+                        <p>Finding the right teammates for hackathons is challenging. Developers, designers, and product managers often struggle to connect with like-minded individuals who share their passion and complement their skills.</p>
+                        <p>Many talented individuals skip hackathons simply because they couldn't find a team. Great ideas remain unbuilt, and potential collaborations never happen.</p>
+                    </div>
+
+                    <div class="about-card">
+                        <div class="about-icon">💡</div>
+                        <h2>Our Solution</h2>
+                        <p>TeamSync is a dedicated platform for hackathon participants to discover teammates, join teams, and build amazing projects together.</p>
+                        <ul class="about-list">
+                            <li>Smart matching algorithm based on skills and interests</li>
+                            <li>Real-time feed of team requests and member searches</li>
+                            <li>Comprehensive hackathon directory</li>
+                            <li>Profile showcasing to highlight your expertise</li>
+                            <li>Instant connection and communication tools</li>
+                        </ul>
+                    </div>
+
+                    <div class="about-card">
+                        <div class="about-icon">🚀</div>
+                        <h2>Our Vision</h2>
+                        <p>We envision a world where no one has to skip a hackathon because they couldn't find a team. Where every builder can easily connect with others who share their vision and complement their skills.</p>
+                        <p>TeamSync is more than a platform—it's a community of innovators, creators, and problem-solvers coming together to build the future.</p>
+                    </div>
+
+                    <div class="about-terminal">
+                        <div class="terminal-header">
+                            <span class="terminal-dot red"></span>
+                            <span class="terminal-dot yellow"></span>
+                            <span class="terminal-dot green"></span>
+                        </div>
+                        <div class="terminal-body">
+                            <p><span class="terminal-prompt">$</span> git clone https://github.com/teamsync/future.git</p>
+                            <p><span class="terminal-prompt">$</span> cd future</p>
+                            <p><span class="terminal-prompt">$</span> npm install collaboration</p>
+                            <p><span class="terminal-success">✓</span> Building amazing teams...</p>
+                            <p><span class="terminal-success">✓</span> Creating innovative solutions...</p>
+                            <p><span class="terminal-success">✓</span> Changing the world, one hackathon at a time.</p>
+                        </div>
+                    </div>
+
+                    <div class="about-cta">
+                        <h2>Join Our Community</h2>
+                        <p>Be part of the movement to make hackathons more accessible and collaborative</p>
+                        <a href="#feed" class="btn btn-primary btn-large">Get Started</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <div class="footer-logo">
+                        <span class="logo-icon">⚡</span>
+                        <span class="logo-text">TeamSync</span>
+                    </div>
+                    <p>Connecting builders, one hackathon at a time.</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Product</h4>
+                    <ul>
+                        <li><a href="#feed">Feed</a></li>
+                        <li><a href="#hackathons">Hackathons</a></li>
+                        <li><a href="#teammates">Find Teammates</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Company</h4>
+                    <ul>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#">Blog</a></li>
+                        <li><a href="#">Careers</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Connect</h4>
+                    <ul>
+                        <li><a href="#">Twitter</a></li>
+                        <li><a href="#">Discord</a></li>
+                        <li><a href="#">GitHub</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 TeamSync. Built with ⚡ for hackers.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
